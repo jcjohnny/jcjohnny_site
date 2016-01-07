@@ -91,7 +91,7 @@ jQuery(document).ready(function($){
 	var homeH = $( window ).height(),
 			navPanels = $();
 
-		$('#prod-menu a').each(function() {
+		$('#scroller a').each(function() {
 			navPanels = navPanels.add($(this.hash));	// easy array of nav panels according to nav items
 		});
 
@@ -99,11 +99,11 @@ jQuery(document).ready(function($){
 			// toggle top menu selection
 			navPanels.each(function() {
 				var $p = $(this)	// current panel in loop
-				var viewTop = $( window ).scrollTop() + $('#prod-menu').outerHeight();
+				var viewTop = $( window ).scrollTop() + $('#scroller').outerHeight();
 				if (viewTop  >= $p.offset().top) {
-					$("#prod-menu ul li").removeClass("sel");
+					$("#scroller ul li").removeClass("sel");
 					if ($p.offset().top + $p.outerHeight() > viewTop) {
-						$('#prod-menu a').filter('[href="#'+$p.attr('id')+'"]').parent().addClass("sel");
+						$('#scroller a').filter('[href="#'+$p.attr('id')+'"]').parent().addClass("sel");
 					}
 				}
 			});
@@ -118,7 +118,7 @@ jQuery(document).ready(function($){
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 				if (target.length) {
 					$('html,body').animate({
-						scrollTop: target.offset().top-$('#prod-menu').outerHeight()
+						scrollTop: target.offset().top-$('#').outerHeight()
 					}, 700);
 					return false;
 				}

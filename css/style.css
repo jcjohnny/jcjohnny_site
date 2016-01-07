@@ -36,8 +36,12 @@ body {
 }
 
 a {
-  color: #93a748;
+  color: #fff;
   text-decoration: none;
+}
+
+li {
+    display: inline;
 }
 
 /* --------------------------------
@@ -46,6 +50,41 @@ Main Components
 
 -------------------------------- */
 
+#scroller {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+#scroller li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    color: #ff3296;
+}
+
+#scroller li:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -3px;
+  height: 4px;
+  background-color: rgb(255, 0, 0);
+  content: "";
+  transition: width 0.2s;
+}
+#scroller li:hover {
+  color: rgb(255, 0, 0);
+}
+#scroller li:hover:after {
+  width: 100%;
+}
+
+#scroller li.sel a{
+    color:rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
 .logo {
     position: fixed;
     left: 5%;
