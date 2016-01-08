@@ -84,6 +84,21 @@ Main Components
     color:rgb(255, 0, 0);
     border-bottom: 2px solid rgb(255, 0, 0);
 }
+
+.launch img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+p.launch {
+    word-spacing: 3px;
+}
+
+span.githubber {
+    margin-left: 40px;
+}
+
 .logo {
     position: fixed;
     left: 5%;
