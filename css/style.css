@@ -60,7 +60,6 @@ Main Components
     font-size: 15px;
     font-weight: 500;
     position: relative;
-    color: #ff3296;
 }
 
 #scroller li:after {
@@ -220,28 +219,24 @@ h2{
 }
 
 .cd-fixed-background.img-1 .cd-content::after {
-  background: url("../img/img-mobile-1.jpg") no-repeat;
   background-size: 100% auto;
 }
 .cd-fixed-background.img-2 {
   background-color: #f2e6cd;
 }
 .cd-fixed-background.img-2 .cd-content::after {
-  background: url("../img/img-mobile-2.jpg") no-repeat;
   background-size: 100% auto;
 }
 .cd-fixed-background.img-3 {
   background-color: #0f594d;
 }
 .cd-fixed-background.img-3 .cd-content::after {
-  background: url("../img/img-mobile-3.jpg") no-repeat;
   background-size: 100% auto;
 }
 .cd-fixed-background.img-4 {
   background-color: #db9537;
 }
 .cd-fixed-background.img-4 .cd-content::after {
-  background: url("../img/img-mobile-4.jpg") no-repeat;
   background-size: 100% auto;
 }
 @media only screen and (min-width: 768px) {

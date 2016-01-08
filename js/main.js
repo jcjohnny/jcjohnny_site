@@ -124,4 +124,14 @@ jQuery(document).ready(function($){
 				}
 			}
 		});
+
+		$(".hovers-holder").hover(function() {
+			console.log("im hovering");
+			console.log(this);
+			$('.hovers-holder').removeClass("show")
+			$('.the-state').removeClass("show")
+			$('.hovers-background').removeClass("show")
+			var currentHover = "." + this.classList[this.classList.length -1]
+			$(currentHover).addClass("show")
+		})
 });
