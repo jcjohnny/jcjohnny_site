@@ -12,8 +12,17 @@ perspective effects (not including the modals and the overlay).
     top: 20px;
     font-weight: 600;
     word-spacing: 3px;
+    padding: 5px;
 }
 
+.md-trigger:hover {
+    background-color: #000;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .6s;
+}
 .md-perspective,
 .md-perspective body {
 	height: 100%;
@@ -115,9 +124,17 @@ perspective effects (not including the modals and the overlay).
 }
 
 li img {
-    width: 20px;
+    width: 26px;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.contact {
+    font-size: 16px;
+}
+
+p.copy {
+    font-size: 15px;
 }
 
 .md-content > div ul {
@@ -169,6 +186,12 @@ li img {
 	-ms-transform: scale(1);
 	transform: scale(1);
 	opacity: 1;
+}
+
+.contact p img {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 32em) {

@@ -55,34 +55,23 @@ Main Components
     font-size: 15px;
     font-weight: 500;
 }
+
 #scroller li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    position: relative;
+    padding: 1px 7px;
 }
 
-#scroller li:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  bottom: -3px;
-  height: 4px;
-  background-color: rgb(255, 0, 0);
-  content: "";
-  transition: width 0.2s;
-}
 #scroller li:hover {
-  color: rgb(255, 0, 0);
-}
-#scroller li:hover:after {
-  width: 100%;
+    background-color: #000;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .6s;
 }
 
-#scroller li.sel a{
-    color:rgb(255, 0, 0);
-    border-bottom: 2px solid rgb(255, 0, 0);
+#scroller li.sel {
+    color: #fff;
+    background-color: #000;
 }
 
 .launch img {
@@ -93,6 +82,7 @@ Main Components
 
 p.launch {
     word-spacing: 3px;
+    padding-left: 7px;
 }
 
 span.githubber {
