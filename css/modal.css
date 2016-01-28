@@ -141,7 +141,7 @@ p.copy {
     margin: 20px 0;
     text-align: center;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
@@ -196,4 +196,38 @@ p.copy {
 
 @media screen and (max-width: 32em) {
 	body { font-size: 75%; }
+}
+
+@media only screen and (max-width: 767px) {
+    #modal-1 {
+        font-size: 10px;
+        width: 90%;
+    }
+
+    p.copy {
+    font-size: 12px;
+    padding: 0;
+    }
+
+    .md-content > div p {
+        padding: 3px 0;
+        line-height: 25px;
+    }
+
+    .contact p img {
+        width: 22px;
+    }
+    a.sourcehover {
+        font-size: 12px;
+    }
+
+    li img {
+        width: 22px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #modal-1 {
+        width: 80%;
+    }
 }

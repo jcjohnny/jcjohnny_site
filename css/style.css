@@ -41,7 +41,7 @@ a {
 }
 
 li {
-    display: inline;
+    display: inline-block;
 }
 
 /* --------------------------------
@@ -49,6 +49,47 @@ li {
 Main Components
 
 -------------------------------- */
+
+ul.cd-vertical-nav li {
+    display: inline;
+}
+
+.gear {
+    background: url("../svg/circles.svg");
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 30%;
+    height: 500px;
+    right: -73px;
+    bottom: 20%;
+}
+
+.cd-fixed-background h2, .cd-fixed-background p {
+  color: #f2e6cd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-fixed-background h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1em;
+  font-weight: 900;
+}
+.cd-fixed-background p {
+  line-height: 1.6;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.cd-fixed-background .cd-content::after {
+  /* phone image on small devices */
+  content: '';
+  display: block;
+  width: 100%;
+  padding: 60% 0;
+  margin: 2em auto 0;
+}
+
 
 #scroller {
     margin-bottom: 10px;
@@ -97,7 +138,10 @@ Main Components
 
 ul.launch p {
     word-spacing: 5px;
+    font-size: 10px;
     line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 ul.launch li {
@@ -181,25 +225,31 @@ h2{
 }
 
 @media only screen and (min-width: 768px) {
+    .bottomelements {
+        left: 120px;
+    }
+
   .cd-fixed-background {
     height: 100%;
     padding: 0;
   }
   .cd-fixed-background h2 {
-    font-size: 3.6rem;
-    font-weight: 700;
+    font-size: 2.6rem;
+    font-weight: 900;
     text-align: right;
     letter-spacing: 12px;
         text-transform: uppercase;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         border-bottom: 10px solid;
   }
+
+
   .cd-fixed-background p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.8;
   }
   .cd-fixed-background .cd-content {
-    width: 50%;
+    width: 40%;
     position: absolute;
     left: 5%;
     top: 46%;
@@ -211,12 +261,14 @@ h2{
     transform: translateY(-50%);
     z-index: 20;
   }
+
   .cd-fixed-background .cd-content::after {
     display: none !important;
   }
   .browser .cd-content::after {
     display: none !important;
   }
+
 
 }
 @media only screen and (min-width: 1048px) {
@@ -232,15 +284,15 @@ h2{
 .cd-vertical-nav {
   position: fixed;
   z-index: 30;
-  left: 5%;
   bottom: -5px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  display: none;
+  left: 5%;
 }
+
 .cd-vertical-nav a {
   display: block;
   height: 40px;
@@ -269,8 +321,68 @@ h2{
   -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
+
 @media only screen and (min-width: 1200px) {
   .cd-vertical-nav {
     display: block;
   }
+
+  .bottomelements {
+      left: 9%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .bottomelements {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        bottom: 4%;
+        font-size: 14px;
+    }
+
+    .cd-vertical-nav {
+      display: none;
+    }
+
+    .browser {
+        background-position: 50% 80%;
+        background-size: 50%;
+    }
+    .cd-fixed-background {
+        height: 100%;
+        padding: 0;
+    }
+
+    .cd-content {
+        padding: 5%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .cd-content h2 {
+        margin-top: 70px;
+        text-transform: uppercase;
+        font-weight: 800;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+        letter-spacing: 4px;
+    }
+
+    .cd-fixed-background p {
+    font-size: 12px;
+}
+
+
+    .applogo {
+        display: none;
+    }
+
+    .gear, #scroller {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
 }
