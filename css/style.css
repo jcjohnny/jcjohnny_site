@@ -78,15 +78,7 @@ Main Components
     width: 20px;
     margin-right: 10px;
     vertical-align: middle;
-}
-
-p.launch {
-    word-spacing: 3px;
-    padding-left: 7px;
-}
-
-span.githubber {
-    margin-left: 40px;
+        float: left;
 }
 
 .logo {
@@ -101,6 +93,16 @@ span.githubber {
 
 .logo img {
     width: 20px;
+}
+
+ul.launch p {
+    word-spacing: 5px;
+    line-height: 17px;
+}
+
+ul.launch li {
+    display: inline-block;
+    width: 130px;
 }
 
 .me {
@@ -131,45 +133,26 @@ p.scroller {
     position: absolute;
 }
 
+span.launcher:hover {
+    border-bottom: 1px solid #000;
+    color: black;
+}
+
 .browser {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     position: absolute;
     background-attachment: fixed;
-    background-position: right 5% bottom 19%;
+    background-position: right 5% bottom 30%;
+    background-size: 50%;
     z-index: 15;
-}
-
-.browser.backbrow1 {
-    background-image: url("../img/testimage1.png");
-}
-
-.browser.backbrow2 {
-    background-image: url("../img/testimage.png");
-}
-.browser.backbrow3 {
-    background-image: url("../img/testimage1.png");
-}
-.browser.backbrow4 {
-    background-image: url("../img/testimage.png");
-}
-
-
-.gear {
-    background: url("../svg/circles.svg");
-    position: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 500px;
-    height: 500px;
-    right: 8%;
-    top: 20%;
 }
 
 .applogo img {
     width: 100%;
 }
+
 .applogo {
     width: 20%;
     display: block;
@@ -181,6 +164,7 @@ p.scroller {
 h2{
     clear: right
 }
+
 @media only screen and (min-width: 768px) {
   .cd-header h1 {
     font-size: 3.6rem;
@@ -195,55 +179,7 @@ h2{
   background-size: cover;
   background-position: center center;
 }
-.cd-fixed-background h2, .cd-fixed-background p {
-  color: #f2e6cd;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.cd-fixed-background h2 {
-  font-size: 2.4rem;
-  margin-bottom: 1em;
-}
-.cd-fixed-background p {
-  line-height: 1.6;
-  font-family: 'Titillium Web', sans-serif;
-}
-.cd-fixed-background .light-background h2, .cd-fixed-background .light-background p {
-  color: #0f594d;
-}
-.cd-fixed-background .cd-content::after {
-  /* phone image on small devices */
-  content: '';
-  display: block;
-  width: 100%;
-  padding: 60% 0;
-  margin: 2em auto 0;
-}
-.cd-fixed-background.img-1 {
-  background-color: #bf5138;
-}
 
-.cd-fixed-background.img-1 .cd-content::after {
-  background-size: 100% auto;
-}
-.cd-fixed-background.img-2 {
-  background-color: #f2e6cd;
-}
-.cd-fixed-background.img-2 .cd-content::after {
-  background-size: 100% auto;
-}
-.cd-fixed-background.img-3 {
-  background-color: #0f594d;
-}
-.cd-fixed-background.img-3 .cd-content::after {
-  background-size: 100% auto;
-}
-.cd-fixed-background.img-4 {
-  background-color: #db9537;
-}
-.cd-fixed-background.img-4 .cd-content::after {
-  background-size: 100% auto;
-}
 @media only screen and (min-width: 768px) {
   .cd-fixed-background {
     height: 100%;
@@ -337,8 +273,4 @@ h2{
   .cd-vertical-nav {
     display: block;
   }
-}
-
-.no-js .cd-vertical-nav {
-  display: none;
 }
