@@ -14,6 +14,7 @@
     width: 50%;
     float: left;
     padding: 5%;
+    height: 300px;
 }
 
 
@@ -58,6 +59,25 @@ p.hovers-description {
     color: #000;
 }
 
+span.modal-launcher:hover {
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+span.launcher:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.launch {
+    padding: 1%;
+    color: #fff;
+}
+
+.launcher {
+    color: #fff;
+}
+
 .cd-fixed-background.img-1 {
     background-color: #fff;
 }
@@ -78,7 +98,7 @@ p.hovers-description {
 
 .hovers-background.vg.show {
     background-image: url("../img/vengegamesbackground.png");
-    background-color: rgb(214, 133, 1);
+    background-color: rgb(71, 71, 71);
 }
 
 .hovers-background.lm.show {
@@ -157,6 +177,13 @@ p.hovers-description {
     }
 
     .index-container {
-        top: 200px;
+        top: 100px;
+    }
+    .hovers-holder{
+        height: initial;
+    }
+
+    .index-container div:last-child {
+        margin-bottom: 150px;
     }
 }

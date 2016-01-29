@@ -3,43 +3,54 @@
 }
 
 .browser.backbrow2 {
-    background-image: url("../img/lyrical_words.png");
+    background-image: url("../img/lyrical_lyrics.png");
 }
 .browser.backbrow3 {
-    background-image: url("../img/lyrical_lyrics.png");
+    background-image: url("../img/lyrical_hovers.png");
 }
 .browser.backbrow4 {
     background-image: url("../img/lyrical_hovers.png");
 }
 
-
 .cd-fixed-background.img-1 {
-    background-color: #bf5138;
+    background-color: #1F1F1F;
 }
 .cd-fixed-background.img-1 .cd-content::after {
     background-size: 100% auto;
 }
 .cd-fixed-background.img-2 {
-    background-color: #f2e6cd;
+    background-color: #565656;
 }
 .cd-fixed-background.img-2 .cd-content::after {
     background-size: 100% auto;
 }
 .cd-fixed-background.img-3 {
-    background-color: #0f594d;
+    background-color: #6D6D6D;
 }
 .cd-fixed-background.img-3 .cd-content::after {
     background-size: 100% auto;
 }
 .cd-fixed-background.img-4 {
-    background-color: #db9537;
+    background-color: #909090;
 }
 .cd-fixed-background.img-4 .cd-content::after {
     background-size: 100% auto;
 }
 
-.cd-fixed-background .light-background h2, .cd-fixed-background .light-background p {
-    color: #0f594d;
+.cd-fixed-background h2, .cd-fixed-background p {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cd-fixed-background.img-1 p, .cd-fixed-background.img-1 h2{
+    color: #fff;
+}
+.cd-fixed-background.img-2 p, .cd-fixed-background.img-2 h2{
+    color: #fff;
+}
+.cd-fixed-background.img-4 p, .cd-fixed-background.img-4 h2{
+    color: #fff;
 }
 
 .gear {
@@ -50,6 +61,28 @@
     background-size: 70%;
     width: 30%;
     height: 500px;
-    right: -73px;
-    bottom: 20%;
+    right: -83px;
+    bottom: 10%;
+}
+
+@media only screen and (max-width: 767px) {
+    .cd-fixed-background.img-1 p{
+        background-color: #1F1F1F;
+    }
+    .cd-fixed-background.img-2 p{
+        background-color: #565656;
+    }
+    .cd-fixed-background.img-3 p{
+        background-color: #6D6D6D;
+    }
+    .cd-fixed-background.img-4 p{
+        background-color: #909090;
+    }
+
+    .cd-fixed-background p {
+        font-size: 14px;
+        position: absolute;
+        z-index: 99;
+        margin-right: 5%;
+    }
 }

@@ -25,8 +25,8 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Titillium Web', sans-serif;
-  color: #0f594d;
-  background-color: #f2e6cd;
+  color: #ccc;
+  background-color: #fff;
 }
 @media only screen and (min-width: 1048px) {
   body {
@@ -54,23 +54,7 @@ ul.cd-vertical-nav li {
     display: inline;
 }
 
-.gear {
-    background: url("../svg/circles.svg");
-    position: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
-    width: 30%;
-    height: 500px;
-    right: -73px;
-    bottom: 20%;
-}
 
-.cd-fixed-background h2, .cd-fixed-background p {
-  color: #f2e6cd;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .cd-fixed-background h2 {
   font-size: 2.4rem;
   margin-bottom: 1em;
@@ -95,10 +79,11 @@ ul.cd-vertical-nav li {
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 #scroller li {
-    padding: 1px 7px;
+    padding: 2px 7px;
 }
 
 #scroller li:hover {
@@ -178,8 +163,7 @@ p.scroller {
 }
 
 span.launcher:hover {
-    border-bottom: 1px solid #000;
-    color: black;
+    border-bottom: 1px solid #fff;
 }
 
 .browser {
@@ -207,6 +191,43 @@ span.launcher:hover {
 
 h2{
     clear: right
+}
+
+span.modal-launcher:hover {
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.project-guide {
+    position: absolute;
+    margin-top: 50px;
+}
+
+ul.project-guide li {
+    font-size: 13px;
+    margin-right: 10px;
+    margin-bottom:  20px;
+}
+
+span.nevious {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 200;
+}
+li.projecters a {
+    color: black;
+    background-color: white;
+    padding: 2px 6px;
+}
+
+li.projecters a:hover {
+    color: white;
+    background-color: black;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .6s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -337,18 +358,19 @@ h2{
         left: 0;
         width: 100%;
         text-align: center;
-        bottom: 4%;
+        bottom: 3%;
         font-size: 14px;
     }
 
-    .cd-vertical-nav {
+    .cd-vertical-nav, .project-guide {
       display: none;
     }
 
     .browser {
         background-position: 50% 80%;
-        background-size: 50%;
+        background-size: 80%;
     }
+
     .cd-fixed-background {
         height: 100%;
         padding: 0;
@@ -367,11 +389,10 @@ h2{
         border-bottom: 1px solid;
         padding-bottom: 10px;
         letter-spacing: 4px;
+        margin-bottom: 8px;
     }
 
-    .cd-fixed-background p {
-    font-size: 12px;
-}
+
 
 
     .applogo {
@@ -383,6 +404,15 @@ h2{
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 550px) {
+    .cd-fixed-background p {
+        font-size: 12px;
+    }
+
+    .browser {
+        background-position: 50% 80%;
+        background-size: 50%;
+    }
+
 
 }

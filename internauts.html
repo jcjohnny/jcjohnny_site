@@ -15,20 +15,19 @@
 	<title>jcjohnny | Internauts</title>
 </head>
 <body>
-	<!-- All modals added here for the demo. You would of course just have one, dynamically created -->
 	<div class="md-modal md-effect-1 " id="modal-1">
 		<div class="md-content">
-			<h3>The Need to Know</h3>
+			<h3>About Me</h3>
 			<div>
-				<p>I'm a huge fan of basketball and one of the stats that rarely get tracked are revenge games. Revenge games are categorized when a player is playing against his former team. In this application, I track all the revenge games for the current day, and display the average revenge stats compared to current season averages to check if a player performs better during revenge games.</p>
+				<p>I'm Johnny Chan, a designer and full-stack developer residing in Brooklyn, NY with a degree in advertising design from the Fashion Institute of Technology. I freelanced as a designer for two years with a bit of experience in web design and development before I fully immersed myself in web development at General Assembly. This site represents all the major projects I've coded and designed on my journey towards web development. </p>
 				<div class="contact">
 				<p class="copy"><img src="./svg/email.svg" target="_blank" alt="">jc2johnny@gmail.com</p>
 				<p class="copy"><img src="./svg/iphone.svg" target="_blank" alt="">917.683.6862</p>
 				</div>
 				<ul>
-					<li><a class="sourcehover" href=""><img src="./svg/resume.svg" target="_blank" alt=""><span class="launcher">resume</span></a></li>
-					<li><a class="sourcehover" href="https://github.com/jcjohnny" target="_blank"><img src="./svg/github.svg" alt=""><span class="launcher">github</span></a></li>
-					<li><a class="sourcehover" href="https://www.linkedin.com/in/jcjohnny" target="_blank"><img src="./svg/linkedin.svg" alt=""><span class="launcher">linkedin</span></a></li>
+					<li><a class="sourcehover" href="johnnychan_resume.pdf" target="_blank"><img src="./svg/resume.svg" target="_blank" alt=""><span class="modal-launcher">resume</span></a></li>
+					<li><a class="sourcehover" href="https://github.com/jcjohnny" target="_blank"><img src="./svg/github.svg" alt=""><span class="modal-launcher">github</span></a></li>
+					<li><a class="sourcehover" href="https://www.linkedin.com/in/jcjohnny" target="_blank"><img src="./svg/linkedin.svg" alt=""><span class="modal-launcher">linkedin</span></a></li>
 				</ul>
 				<div class="md-close">Close</div>
 			</div>
@@ -45,10 +44,10 @@
 		<div class="bottomelements">
 			<nav id="scroller">
 			<ul>
-				<li class="sel"><a href="#what">WHAT</a></li>
-				<li><a href="#why">WHY</a></li>
-				<li><a href="#how">HOW</a></li>
-				<li><a href="#where">WHERE</a></li>
+				<li class="sel"><a href="#about">about</a></li>
+				<li><a href="#content">content</a></li>
+				<li><a href="#maps">maps</a></li>
+				<!-- <li><a href="#where">WHERE</a></li> -->
 			</ul>
 			</nav>
 			<ul class="launch">
@@ -68,41 +67,44 @@
 		</div>
 
 
-	<section class="cd-fixed-background img-1" id="what" data-type="slider-item">
+	<section class="cd-fixed-background img-1" id="about" data-type="slider-item">
 		<div class="browser backbrow1"></div>
 		<div class="rotateholder">
 			<div class="gear"></div>
 		</div>
 		<div class="cd-content">
 			<div class="applogo"><img src="./svg/internautslogo.svg" alt=""></div>
-			<h2>Vengegames</h2>
-			<p>I'm a huge fan of basketball and one of the stats that rarely get tracked are revenge games. Revenge games are categorized when a player is playing against his former team. In this application, I track all the revenge games for the current day, and display the average revenge stats compared to current season averages to check if a player performs better during revenge games.</p>
+			<h2>internauts</h2>
+			<p>A Ruby on Rails app sports pick-up game finder. Allows users to create accounts to start or join desired pick-up games in their area that would otherwise be difficult to find or be invited to if he/she just moved to a city or does not have many friends that play sports.</p>
 		</div>
 	</section>
 
-	<section class="cd-fixed-background img-2"  id="why" data-type="slider-item">
+	<section class="cd-fixed-background img-2"  id="content" data-type="slider-item">
 		<div class="browser backbrow2"></div>
 		<div class="rotateholder">
 			<div class="gear"></div>
 		</div>
 		<div class="cd-content light-background">
-			<h2>Title here</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolor beatae, laudantium eos fugiat, deserunt delectus quibusdam quae placeat, tempora ea? Nulla ducimus, magnam sunt repellendus modi, ad ipsam est.</p>
+			<h2>User Content</h2>
+			<p>Users have all the power. Utilizing the rails framework, users generate the content with forms that output all the data into a database to dynamically design pages and input data into google maps</p>
 		</div>
 	</section>
 
-	<section class="cd-fixed-background img-3"   id="how" data-type="slider-item">
+	<section class="cd-fixed-background img-3"   id="maps" data-type="slider-item">
 		<div class="browser backbrow3"></div>
 		<div class="rotateholder">
 			<div class="gear"></div>
 		</div>
 		<div class="cd-content">
-			<h2>Title here</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolor beatae, laudantium eos fugiat, deserunt delectus quibusdam quae placeat, tempora ea? Nulla ducimus, magnam sunt repellendus modi, ad ipsam est.</p>
+			<h2>Included Fun</h2>
+			<p>Google maps API allow viewers to easily locate a pick-up game. Users dynamicly update data on the page and the database by joining a game or sharing a comment.</p>
+			<ul class="project-guide">
+				<a href="lyricalmashup.html"><li class= "projecters">LYRICAL MASHUP <span class="nevious">:previous project</span></a></li>
+			</ul>
 		</div>
 	</section>
 
-	<section class="cd-fixed-background img-4"   id="where" data-type="slider-item">
+	<!-- <section class="cd-fixed-background img-4"   id="where" data-type="slider-item">
 		<div class="browser backbrow4"></div>
 		<div class="rotateholder">
 			<div class="gear"></div>
@@ -110,8 +112,11 @@
 		<div class="cd-content">
 			<h2>Title here</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolor beatae, laudantium eos fugiat, deserunt delectus quibusdam quae placeat, tempora ea? Nulla ducimus, magnam sunt repellendus modi, ad ipsam est.</p>
+			<ul class="project-guide">
+				<a href="lyricalmashup.html"><li class= "projecters">LYRICAL MASHUP <span class="nevious">:previous project</span></a></li>
+			</ul>
 		</div>
-	</section>
+	</section> -->
 
 	<nav>
 		<ul class="cd-vertical-nav">

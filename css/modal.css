@@ -41,7 +41,7 @@ perspective effects (not including the modals and the overlay).
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 50%;
+	width: 70%;
 	max-width: 100%;
 	min-width: 320px;
 	height: auto;
@@ -159,11 +159,13 @@ p.copy {
 .md-close {
     text-align: center;
     background-color: black;
-    width: 110px;
+    width: 90px;
     margin: 0 auto;
     color: white;
-    margin-top: 6%;
-    padding: 1%;
+    margin-top: 3%;
+    padding: 6px;
+    text-transform: lowercase;
+    font-weight: 100;
 }
 
 /* Individual modal styles with animations/transitions */
@@ -200,7 +202,7 @@ p.copy {
 
 @media only screen and (max-width: 767px) {
     #modal-1 {
-        font-size: 10px;
+        font-size: 12px;
         width: 90%;
     }
 
@@ -215,14 +217,22 @@ p.copy {
     }
 
     .contact p img {
-        width: 22px;
+        width: 18px;
     }
     a.sourcehover {
         font-size: 12px;
     }
 
     li img {
-        width: 22px;
+        width: 18px;
+    }
+    .md-content > div {
+        padding: 2% 6%;
+    }
+
+    .md-content > div ul {
+        margin: 10px 0;
+        text-align: center;
     }
 }
 
