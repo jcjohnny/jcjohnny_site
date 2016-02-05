@@ -110,6 +110,9 @@ span.launcher:hover {
     background-image: url("../img/internauts_background.png");
     background-color: #C5C5C5;
 }
+.hovers-background.os.show {
+    background-color: #313832;
+}
 
 .hovers-background.show {
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */

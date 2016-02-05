@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/othersites.css"> <!-- Resource style -->
+	<link rel="stylesheet" type="text/css" href="css/modal.css" />
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>jcjohnny | designer & full-stack developer</title>
+</head>
+<body>
+		<div class="md-modal md-effect-1 " id="modal-1">
+			<div class="md-content">
+				<h3>About Me</h3>
+				<div>
+					<p>I'm Johnny Chan, a designer and full-stack developer residing in Brooklyn, NY with a degree in advertising design from the Fashion Institute of Technology. I freelanced as a designer for two years with a bit of experience in web design and development before I fully immersed myself in web development at General Assembly. This site represents all the major projects I've coded and designed on my journey towards web development. </p>
+					<div class="contact">
+					<p class="copy"><img src="./svg/email.svg" target="_blank" alt="">jc2johnny@gmail.com</p>
+					<p class="copy"><img src="./svg/iphone.svg" target="_blank" alt="">917.683.6862</p>
+					</div>
+					<ul>
+						<li><a class="sourcehover" href="johnnychan_resume.pdf" target="_blank"><img src="./svg/resume.svg" target="_blank" alt=""><span class="modal-launcher">resume</span></a></li>
+						<li><a class="sourcehover" href="https://github.com/jcjohnny" target="_blank"><img src="./svg/github.svg" alt=""><span class="modal-launcher">github</span></a></li>
+						<li><a class="sourcehover" href="https://www.linkedin.com/in/jcjohnny" target="_blank"><img src="./svg/linkedin.svg" alt=""><span class="modal-launcher">linkedin</span></a></li>
+					</ul>
+					<div class="md-close">Close</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="md-trigger" data-modal="modal-1"><a href="#sel">ME ME ME</a></div>
+		</div>
+		<div class="md-overlay"></div><!-- the overlay element -->
+
+	<a href="index.html"><div class="logo"> <img src="./svg/jclogo.svg" alt=""></div></a>
+
+	<section class="cd-fixed-background img-1" id="what" data-type="slider-item">
+		<div class="index-container">
+
+
+				<div class="content">
+					<div class="what-is">
+						<h2>Websites designed and developed as a freelancer and designer</h2>
+					</div>
+					<div class="grid">
+						<figure class="effect-effja">
+							<img src="img/wowfulls.png" alt="img21"/>
+							<a href="http://wowfulls.com"  target="_blank">
+								<figcaption>
+								<h1>Wowfulls</h1>
+								<div>
+									<p>An up and coming dessert spot.</p>
+									<p>located in Brooklyn</p>
+
+								</div>
+							</figcaption>
+							</a>
+						</figure>
+						<figure class="effect-effja">
+							<img src="img/geekshopinc.png" alt="img21"/>
+							<a href="http://geekshopinc.com"  target="_blank">
+								<figcaption>
+								<h1>Geekshop Inc</h1>
+								<div>
+									<p>A technology repair shop in Brooklyn.</p>
+
+								</div>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="grid">
+						<figure class="effect-effja">
+							<img src="img/leaderrefrigeration.png" alt="img21"/>
+							<a href="http://leaderrefrigerationusa.com"  target="_blank">
+								<figcaption>
+								<h1>Leader Refrigeration</h1>
+								<div>
+									<p>Commercial Refrigeration Equipment</p>
+
+								</div>
+							</figcaption>
+							</a>
+						</figure>
+						<figure class="effect-effja">
+							<img src="img/pacifichoods.png" alt="img21"/>
+							<a href="http://pacifichoods.com"  target="_blank">
+								<figcaption>
+								<h1>Pacific Hoods</h1>
+								<div>
+									<p>Kitchen Range Hoods distributor</p>
+								</div>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+				</div>
+
+			<script>
+				// For Demo purposes only (show hover effect on mobile devices)
+				[].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+					el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+				} );
+			</script>
+
+	</section>
+
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+</body>
+</html>
